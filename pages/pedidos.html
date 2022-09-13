@@ -15,192 +15,296 @@
       src="https://kit.fontawesome.com/8adb1fb139.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <header class="header">
-      <a class="header__logo" href="../index.html">
-        <img src="../assets/images/logo.png" alt="Logo" />
-        <h4>Home</h4>
-      </a>
-      <a class="header__nosotros" href="./quiensoy.html">
-        <h4>Quién soy</h4>
-      </a>
-      <a class="header__pedidos header__active" href="./pedidos.html">
-        <h4>Pedidos</h4>
-      </a>
-      <a class="header__contacto" href="./contacto.html">
-        <h4>Contacto</h4>
-      </a>
-      <a class="bars__menu" href="../index.html">
-        <i class="fa-solid fa-bars"></i>
-      </a>
+    <header class="header__color">
+      <nav class="navbar navbar-dark navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand header__logo" href="../index.html">
+            <img src="../assets/images/logo.png" alt="Logo" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse text-center"
+            id="navbarNavAltMarkup"
+          >
+            <div class="navbar-nav fs-5 gap-5">
+              <a class="header__logo nav-link" href="../index.html">Home</a>
+              <a class="header__nosotros nav-link" href="./quiensoy.html"
+                >Nosotros</a
+              >
+              <a
+                class="header__pedidos nav-link active"
+                aria-current="page"
+                href="./pedidos.html"
+                >Pedidos</a
+              >
+              <a class="header__contacto nav-link" href="./contacto.html"
+                >Contacto</a
+              >
+            </div>
+          </div>
+        </div>
+      </nav>
     </header>
 
-    <main>
-      <section class="main__funkomizate">
-        <div class="main__funkomizate__title">
-          <h3>#FUNKOMIZATE</h3>
+    <main class="qs__bg__main">
+      <section class="pb-3">
+        <div class="text-center">
+          <h3 class="main__funkomizate__title">#FUNKOMIZATE</h3>
         </div>
+        <div class="container">
+          <div class="row">
 
-        <div class="main__funkomizate__card">
-          <div class="main__funkomizate-card">
-            <h4 class="main__funkomizate-title">¿Como?</h4>
-            <p class="main__funkomizate-text">
-              Mandanos un par de fotos para ver tus rasgos, ropa, tattoos, o
-              cualquier detalle que creas que te caracteriza y te convertimos en
-              Funko.
-            </p>
-          </div>
+            <div class="col-12 mb-4">
+              <h3 class="text-center main__funkomizate-text">Hacé tu pedido...</h3>
+            </div>
 
-          <div class="main__funkomizate-card">
-            <h4 class="main__funkomizate-title">¿Cuanto?</h4>
-            <p class="main__funkomizate-text">
-              Valor: $5.000 (Seña de $1.000 y el resto en el momento de la
-              entrega).
-            </p>
-          </div>
+            <div class="col-12 col-md-6 mb-4"">
+              <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingOne">
+                    <button
+                      class="accordion-button collapsed main__funkomizate__acordion-color"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseOne"
+                      aria-expanded="false"
+                      aria-controls="flush-collapseOne"
+                    >
+                      ¿Como?
+                    </button>
+                  </h2>
+                  <div
+                    id="flush-collapseOne"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="flush-headingOne"
+                    data-bs-parent="#accordionFlushExample"
+                  >
+                    <div class="accordion-body">
+                      Mandanos un par de fotos para ver tus rasgos, ropa,
+                      tattoos, o cualquier detalle que creas que te caracteriza
+                      y te convertimos en Funko.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingTwo">
+                    <button
+                      class="accordion-button collapsed main__funkomizate__acordion-color"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseTwo"
+                      aria-expanded="false"
+                      aria-controls="flush-collapseTwo"
+                    >
+                      ¿Cuanto?
+                    </button>
+                  </h2>
+                  <div
+                    id="flush-collapseTwo"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="flush-headingTwo"
+                    data-bs-parent="#accordionFlushExample"
+                  >
+                    <div class="accordion-body">
+                      Valor: $5.000 (Seña de $1.000 y el resto en el momento de
+                      la entrega).
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingThree">
+                    <button
+                      class="accordion-button collapsed main__funkomizate__acordion-color"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseThree"
+                      aria-expanded="false"
+                      aria-controls="flush-collapseThree"
+                    >
+                      ¿Cuando?
+                    </button>
+                  </h2>
+                  <div
+                    id="flush-collapseThree"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="flush-headingThree"
+                    data-bs-parent="#accordionFlushExample"
+                  >
+                    <div class="accordion-body">
+                      Una vez que acordamos todos los detalles que llevara tu
+                      FUNKO, demoramos aproximadamente 20 dias dependiendo de
+                      los pedidos que tengamos en ese momento.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-          <div class="main__funkomizate-card">
-            <h4 class="main__funkomizate-title">¿Cuando?</h4>
-            <p class="main__funkomizate-text">
-              Una vez que acordamos todos los detalles que llevara tu FUNKO,
-              demoramos aproximadamente 20 dias dependiendo de los pedidos que
-              tengamos en ese momento.
-            </p>
+            <div class="col-12 col-md-6">
+              <div class="main__form__ped w-100">
+                <form action="">
+                  <div class="input-group mb-3">
+                    <span class="input-group-text">Nombre y Apellido</span>
+                    <input
+                      type="text"
+                      placeholder="Nombre y Apellido"
+                      aria-label="First name"
+                      class="form-control"
+                    />
+                  </div>
+
+                  <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1"
+                      >Celular</span
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Teléfono celular"
+                      aria-label="Username"
+                      aria-describedby="basic-addon1"
+                    />
+                  </div>
+
+                  <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1"
+                      >@e-mail</span
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="e-mail"
+                      aria-label="Username"
+                      aria-describedby="basic-addon1"
+                    />
+                  </div>
+
+                  <div class="mb-3">
+                    <input
+                      class="form-control"
+                      type="file"
+                      id="formFileMultiple"
+                      multiple
+                    />
+                  </div>
+
+                  <div class="d-flex justify-content-evenly fw-bold mb-3">
+                    <div class="form-check form-switch">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        role="switch"
+                        id="flexSwitchCheckDefault"
+                      />
+                      <label
+                        class="form-check-label"
+                        for="flexSwitchCheckDefault"
+                        >Envío a Domicilio</label
+                      >
+                    </div>
+
+                    <div class="form-check form-switch">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        role="switch"
+                        id="flexSwitchCheckDefault"
+                      />
+                      <label
+                        class="form-check-label"
+                        for="flexSwitchCheckDefault"
+                        >Retiro en Persona</label
+                      >
+                    </div>
+                  </div>
+
+                  <div class="mb-3">
+                    <textarea
+                      class="form-control"
+                      placeholder="Ingrese sus comentarios aquí..."
+                      id="exampleFormControlTextarea1"
+                      rows="3"
+                    ></textarea>
+                  </div>
+
+                  <div class="botones d-flex justify-content-evenly">
+                    <input
+                      class="btn btn-primary"
+                      type="reset"
+                      value="Limpiar Formulario"
+                    />
+                    <input
+                      class="btn btn-primary"
+                      type="submit"
+                      value="Confirmar Pedido"
+                    />
+                  </div>
+                </form>
+              </div>
+            </div>
           </div>
         </div>
-      </section>
-
-      <section class="main__form__ped">
-        <form action="" class="main__form__ped__form">
-          <h3>Hacé tu pedido...</h3>
-          <input
-            id="GET-name"
-            type="text"
-            placeholder="Nombre"
-            class="main__form__ped__form-content"
-          />
-          <input
-            id="GET-lastname"
-            type="text"
-            placeholder="Apellido"
-            class="main__form__ped__form-content"
-          />
-          <input
-            type="email"
-            name=""
-            id="GET-email"
-            placeholder="e-mail"
-            class="main__form__ped__form-content"
-          />
-          <div class="main__form__ped__form-label">
-            <div class="main__form__ped__form-label-content">
-              <p>Precio Unitario</p>
-            </div>
-            <div class="main__form__ped__form-label-content">
-              <p>Cantidad</p>
-            </div>
-            <div class="main__form__ped__form-label-content">
-              <p>Precio Total</p>
-            </div>
-            <div class="main__form__ped__form-label-content">
-              <p>$ 5.000</p>
-            </div>
-            <div class="main__form__ped__form-label-content">
-              <input type="number" min="1" max="1000" value="1" />
-            </div>
-            <div class="main__form__ped__form-label-content">
-              <p>$ 5.000</p>
-            </div>
-          </div>
-          <div class="main__form__ped__form-radio">
-            <div class="radio__content">
-              <label for="domicilio"> Envío a Domicilio </label>
-              <input type="radio" name="entrega" id="domicilio" />
-            </div>
-            <div class="radio__content">
-              <label for="persona"> Retiro en Persona </label>
-              <input type="radio" name="entrega" id="persona" />
-            </div>
-          </div>
-          <div class="main__form__ped__form-text">
-            <textarea
-              name=""
-              id=""
-              cols="60"
-              rows="10"
-              placeholder="Ingrese sus comentarios aquí..."
-            ></textarea>
-          </div>
-          <div class="main__form__ped__form-button">
-            <button type="button">Cargar Imágenes</button>
-            <button type="reset">Limpiar Formulario</button>
-            <button type="submit">Finalizar Compra</button>
-          </div>
-        </form>
       </section>
     </main>
 
     <footer class="footer">
-      <div class="footer__1stline">
-        <a class="footer__logo" href="../index.html">
-          <img
-            class="footer__logo-img"
-            src="../assets/images/logo.png"
-            alt="Logo"
-          />
-          <h4>Pork - Custom Toys</h4>
-        </a>
-        <div class="footer__dom">
-          <h6>Av. Eva Perón 3543, C1406HNK, CABA</h6>
-          <a
-            href="https://www.google.com/maps/place/Pork+(Custom+Toys)/@-34.644949,-58.465452,12z/data=!4m5!3m4!1s0x0:0x128a43c430c6ec9a!8m2!3d-34.6449494!4d-58.4654522?hl=es-419"
-            target="_blank"
-          >
-            <i class="fa-solid fa-map-location-dot"></i>
+      <div class="container d-flex flex-column align-items-center flex-md-row justify-content-md-between">
+        <div>
+          <a class="d-flex justify-content-center justify-content-md-start" href="../index.html">
+            <img
+              class="footer__logo-img"
+              src="../assets/images/logo.png"
+              alt="Logo"
+            />
+            <h4 class="fs-5 m-0 d-flex align-items-center">Pork - Custom Toys</h4>
+          </a>
+          <div class="d-flex">
+            <h6 class="fs-6">Av. Eva Perón 3543, C1406HNK, CABA</h6>
+            <a
+              href="https://www.google.com/maps/place/Pork+(Custom+Toys)/@-34.644949,-58.465452,12z/data=!4m5!3m4!1s0x0:0x128a43c430c6ec9a!8m2!3d-34.6449494!4d-58.4654522?hl=es-419"
+              target="_blank"
+            >
+              <i class="fa-solid fa-map-location-dot mx-3"></i>
+            </a>
+          </div>
+        </div>
+  
+        <div class="fs-2">
+          <a class="mx-2" href="https://www.instagram.com/pork.custom.toys/" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a class="mx-2" href="https://api.whatsapp.com/send?phone=541122962328" target="_blank" >
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+          <a class="mx-2" href="./contacto.html">
+            <i class="fa-solid fa-envelope"></i>
           </a>
         </div>
       </div>
-
-      <hr />
-
-      <div class="footer__2ndBlock">
-        <a class="footer__home" href="../index.html">
-          <h4>Home</h4>
-        </a>
-        <a class="footer__nosotros" href="./quiensoy.html">
-          <h4>Quién soy</h4>
-        </a>
-        <a class="footer__pedidos" href="./pedidos.html">
-          <h4>Pedidos</h4>
-        </a>
-        <a class="footer__contacto" href="./contacto.html">
-          <h4>Contacto</h4>
-        </a>
-      </div>
-
-      <div class="footer__redes">
-        <a href="https://www.instagram.com/pork.custom.toys/" target="_blank">
-          <i class="fa-brands fa-instagram"></i>
-        </a>
-        <a
-          href="https://api.whatsapp.com/send?phone=541122962328"
-          target="_blank"
-        >
-          <i class="fa-brands fa-whatsapp"></i>
-        </a>
-        <a href="./contacto.html">
-          <i class="fa-solid fa-envelope"></i>
-        </a>
-      </div>
     </footer>
-
-    <aside class="redes">
-      <div class="redes__conteiner">
-        <a href="#top">
-          <i class="fa-solid fa-house"></i>
-        </a>
-      </div>
-    </aside>
   </body>
 </html>
