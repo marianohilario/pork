@@ -444,77 +444,12 @@
     margin: 0;
     text-shadow: #727272 3px 2px;
     letter-spacing: 2px;
-    animation: bounce-in-bck 1.5s ease-in-out;
+    animation: bounce-in-bck 1.5s ease-in-out 0.5s;
 }
 
-<<<<<<< HEAD
-.bounce-in-bck {
-    animation: bounce-in-bck 1.5s ease-in-out;
-}
-
-@keyframes bounce-in-bck {
-    0% {
-      -webkit-transform: scale(7);
-              transform: scale(7);
-      -webkit-animation-timing-function: ease-in;
-              animation-timing-function: ease-in;
-      opacity: 0;
-    }
-    38% {
-      -webkit-transform: scale(1);
-              transform: scale(1);
-      -webkit-animation-timing-function: ease-out;
-              animation-timing-function: ease-out;
-      opacity: 1;
-    }
-    55% {
-      -webkit-transform: scale(1.5);
-              transform: scale(1.5);
-      -webkit-animation-timing-function: ease-in;
-              animation-timing-function: ease-in;
-    }
-    72% {
-      -webkit-transform: scale(1);
-              transform: scale(1);
-      -webkit-animation-timing-function: ease-out;
-              animation-timing-function: ease-out;
-    }
-    81% {
-      -webkit-transform: scale(1.24);
-              transform: scale(1.24);
-      -webkit-animation-timing-function: ease-in;
-              animation-timing-function: ease-in;
-    }
-    89% {
-      -webkit-transform: scale(1);
-              transform: scale(1);
-      -webkit-animation-timing-function: ease-out;
-              animation-timing-function: ease-out;
-    }
-    95% {
-      -webkit-transform: scale(1.04);
-              transform: scale(1.04);
-      -webkit-animation-timing-function: ease-in;
-              animation-timing-function: ease-in;
-    }
-    100% {
-      -webkit-transform: scale(1);
-              transform: scale(1);
-      -webkit-animation-timing-function: ease-out;
-              animation-timing-function: ease-out;
-    }
-  } 
-
-.main__funkomizate__card {
-    width: 90vw;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
-=======
 .main__funkomizate__acordion-color {
     background-color: #de4ebf !important;
     color: white !important;
->>>>>>> secundaria
 }
 .accordion-button::after {
     color: white !important;
@@ -596,102 +531,6 @@
     border-bottom: 2px solid #e986d4;
 }
 
-<<<<<<< HEAD
-.main__form__ped__form-radio {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-    color: #fff;
-    font-weight: 600;
-    margin-bottom: 1.5rem;
-}
-
-.radio__content {
-    display: flex;
-    align-items: center;
-    gap: 0.6rem;
-}
-
-.radio__content label,
-.radio__content input {
-    cursor: pointer;
-}
-
-.main__form__ped__form-text {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 1.5rem;
-}
-
-.main__form__ped__form-text textarea {
-    width: 90%;
-    border-radius: 5px;
-    padding: 0.5rem;
-    font-size: 1rem;
-    box-shadow: 5px 5px 8px 0px rgba(0, 0, 0, 60%);
-}
-
-.main__form__ped__form-button {
-    display: flex;
-    gap: 2rem;
-}
-
-.main__form__ped__form-button button {
-    font-size: 0.9rem;
-    box-shadow: 5px 5px 8px 0px rgba(0, 0, 0, 60%);
-    background-color: #e79dd7;
-    border: none;
-    border-radius: 3px;
-    height: 2rem;
-    padding-inline: 0.5rem;
-    font-weight: 600;
-    letter-spacing: 1px;
-    color: rgb(82, 82, 82);
-    text-shadow: #eaeaea 1px 1px;
-    cursor: pointer;
-}
-
-/**** FORM CONTACTO ****/
-.main__form_contact {
-    background-color: #e986d4;
-    width: 100vw;
-    padding: 2rem 0 4rem 0;
-    display: flex;
-    justify-content: center;
-} 
-
-.redes {
-    position: fixed;
-    bottom: 5vh;
-    right: 1rem;
-}
-
-.redes__conteiner {
-    border: 2px solid rgba(0, 0, 0, 60%);
-    padding: 0.3rem;
-    border-radius: 50%;
-}
-
-.redes i {
-    color: black;
-    border-radius: 50%;
-    font-size: 1.5rem;
-    opacity: 60%;
-}
-
-@media (max-width: 1440px) {
-    .qs__nosotros__imgs {
-        gap: 2rem;
-    }
-}
-
-@media (max-width: 1024px) {
-    .qs__imgs__2 {
-        display: none;
-    }
-}
-=======
 .infocontacto p:last-child {
     border: 0;
 }
@@ -749,7 +588,6 @@
               animation-timing-function: ease-out;
     }
   }
->>>>>>> secundaria
 
 @media (max-width: 768px) {
     .home {
