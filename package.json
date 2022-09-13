@@ -1,0 +1,22 @@
+{
+  "name": "proyecto-mariano-hilario",
+  "version": "1.0.0",
+  "description": "Proyecto para CoderHouse",
+  "main": "index.js",
+  "scripts": {
+    "build-sass": "node-sass --include-path scss ./scss/style.scss ./css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marianohilario/pork.git"
+  },
+  "author": "Mariano Hilario",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marianohilario/pork/issues"
+  },
+  "homepage": "https://github.com/marianohilario/pork#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.3"
+  }
+}
