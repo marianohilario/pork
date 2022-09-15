@@ -1,0 +1,28 @@
+.header {
+  background-color: $primarycolor;
+  position: sticky !important;
+  top: 0;
+  z-index: 2;
+
+  &__logo {
+    animation: slide-in-left 2.5s;
+  }
+
+  &__nosotros {
+    animation: slide-in-left 2s;
+  }
+
+  &__pedidos {
+    animation: slide-in-left 1.5s;
+  }
+
+  &__contacto {
+    animation: slide-in-left 1s;
+  }
+
+  &__logo img {
+    height: 3rem;
+    filter: drop-shadow(-2px 2px 5px rgba(0, 0, 0, 85%));
+    animation: jello-horizontal 5s both infinite;
+  }
+}

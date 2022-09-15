@@ -1,0 +1,77 @@
+.main {
+  background-image: url("../assets/images/Nosotros/whatsapp-pink-background-wallpaper.jpg");
+  background-size: contain;
+
+  &__qs__box__shadow {
+    box-shadow: 14px 14px 13px -6px rgb(107, 107, 107);
+    border-radius: 5px;
+    background-color: #ffffffe6;
+    z-index: 1;
+  }
+
+  h1,
+  h2 {
+    color: $primarycolor;
+    text-shadow: #727272 3px 2px;
+  }
+
+  &__qs__nosotros__imgs img {
+    height: 8rem;
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 80%));
+  }
+
+  &__qs__trabajos_text h2 {
+    text-shadow: #727272 3px 2px;
+  }
+
+  &__qs__trabajos_text p {
+    text-align: justify;
+    color: #373737;
+    font-weight: 600;
+    letter-spacing: 1px;
+    line-height: 1.8rem;
+  }
+
+  &__fondos_img {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0;
+    height: 150px;
+    opacity: 80%;
+
+    &1 {
+      background-image: url("../assets/images/Nosotros/Img1.png");
+    }
+    &3 {
+      background-image: url("../assets/images/Nosotros/Img3.png");
+    }
+    &4 {
+      background-image: url("../assets/images/Nosotros/Img4.png");
+    }
+    &_central {
+      background-image: url("../assets/images/Nosotros/Fondo_colores.png");
+    }
+    &5 {
+      background-image: url("../assets/images/Nosotros/Img2.png");
+    }
+    &6 {
+      background-image: url("../assets/images/Nosotros/Img5.png");
+    }
+    &7 {
+      background-image: url("../assets/images/Nosotros/Imp-3D.png");
+    }
+  }
+
+  &__qs__carousel {
+    background-color: $secondarycolor;
+
+    img {
+      box-shadow: 5px 5px 20px 0px rgba(255, 255, 255, 0.8);
+      border: 3px solid #fff;
+    }
+
+    &__height__img {
+      height: 40vh;
+    }
+  }
+}

@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif; }
+
+@keyframes slide-in-left {
+  0% {
+    -webkit-transform: translateX(-1000px);
+    transform: translateX(-1000px);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1; } }
+
+@keyframes jello-horizontal {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1); }
+  80% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1); }
+  86% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+    transform: scale3d(1.25, 0.75, 1); }
+  88% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+    transform: scale3d(0.75, 1.25, 1); }
+  90% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+    transform: scale3d(1.15, 0.85, 1); }
+  93% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+    transform: scale3d(0.95, 1.05, 1); }
+  95% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+    transform: scale3d(1.05, 0.95, 1); }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1); } }
+
+.header {
+  background-color: #de4ebf;
+  position: sticky !important;
+  top: 0;
+  z-index: 2; }
+  .header__logo {
+    animation: slide-in-left 2.5s; }
+  .header__nosotros {
+    animation: slide-in-left 2s; }
+  .header__pedidos {
+    animation: slide-in-left 1.5s; }
+  .header__contacto {
+    animation: slide-in-left 1s; }
+  .header__logo img {
+    height: 3rem;
+    filter: drop-shadow(-2px 2px 5px black);
+    animation: jello-horizontal 5s both infinite; }
+
+.footer {
+  background-color: #de4ebf;
+  width: 100vw;
+  padding-block: 1rem; }
+  .footer * {
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 1px; }
+  .footer__logo-img {
+    height: 1.7rem;
+    filter: drop-shadow(-2px 2px 15px black);
+    transition: all 1s;
+    padding-right: 1rem; }
+    .footer__logo-img:hover {
+      transform: scale(1.1); }
+
+.main {
+  background-image: url("../assets/images/Nosotros/whatsapp-pink-background-wallpaper.jpg");
+  background-size: contain; }
+  .main__qs__box__shadow {
+    box-shadow: 14px 14px 13px -6px #6b6b6b;
+    border-radius: 5px;
+    background-color: #ffffffe6;
+    z-index: 1; }
+  .main h1,
+  .main h2 {
+    color: #de4ebf;
+    text-shadow: #727272 3px 2px; }
+  .main__qs__nosotros__imgs img {
+    height: 8rem;
+    filter: drop-shadow(5px 5px 5px black); }
+  .main__qs__trabajos_text h2 {
+    text-shadow: #727272 3px 2px; }
+  .main__qs__trabajos_text p {
+    text-align: justify;
+    color: #373737;
+    font-weight: 600;
+    letter-spacing: 1px;
+    line-height: 1.8rem; }
+  .main__fondos_img {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0;
+    height: 150px;
+    opacity: 80%; }
+    .main__fondos_img1 {
+      background-image: url("../assets/images/Nosotros/Img1.png"); }
+    .main__fondos_img3 {
+      background-image: url("../assets/images/Nosotros/Img3.png"); }
+    .main__fondos_img4 {
+      background-image: url("../assets/images/Nosotros/Img4.png"); }
+    .main__fondos_img_central {
+      background-image: url("../assets/images/Nosotros/Fondo_colores.png"); }
+    .main__fondos_img5 {
+      background-image: url("../assets/images/Nosotros/Img2.png"); }
+    .main__fondos_img6 {
+      background-image: url("../assets/images/Nosotros/Img5.png"); }
+    .main__fondos_img7 {
+      background-image: url("../assets/images/Nosotros/Imp-3D.png"); }
+  .main__qs__carousel {
+    background-color: #e986d4; }
+    .main__qs__carousel img {
+      box-shadow: 5px 5px 20px 0px rgba(255, 255, 255, 0.8);
+      border: 3px solid #fff; }
+    .main__qs__carousel__height__img {
+      height: 40vh; }

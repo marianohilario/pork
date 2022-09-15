@@ -1,0 +1,22 @@
+.footer {
+  background-color: $primarycolor;
+  width: 100vw;
+  padding-block: 1rem;
+
+  * {
+    color: $fontcolor;
+    text-decoration: none;
+    letter-spacing: 1px;
+  }
+
+  &__logo-img {
+    height: 1.7rem;
+    filter: drop-shadow(-2px 2px 15px rgba(0, 0, 0, 85%));
+    transition: all 1s;
+    padding-right: 1rem;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
