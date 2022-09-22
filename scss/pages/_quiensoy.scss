@@ -1,9 +1,9 @@
 .main {
-  background-image: url("../assets/images/Nosotros/whatsapp-pink-background-wallpaper.jpg");
+  background-image: $background-image;
   background-size: contain;
 
   &__qs__box__shadow {
-    box-shadow: 14px 14px 13px -6px rgb(107, 107, 107);
+    box-shadow: $box-shadow;
     border-radius: 5px;
     background-color: #ffffffe6;
     z-index: 1;
@@ -12,7 +12,7 @@
   h1,
   h2 {
     color: $primarycolor;
-    text-shadow: #727272 3px 2px;
+    text-shadow: $text-shadow;
   }
 
   &__qs__nosotros__imgs img {
@@ -21,7 +21,7 @@
   }
 
   &__qs__trabajos_text h2 {
-    text-shadow: #727272 3px 2px;
+    text-shadow: $text-shadow;
   }
 
   &__qs__trabajos_text p {

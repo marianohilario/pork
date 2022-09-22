@@ -1,0 +1,27 @@
+.infocontacto i {
+  color: $primarycolor;
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+.infocontacto a {
+  color: #6b6b6b;
+  text-shadow: #eaeaea 2px 2px;
+
+  &:hover {
+    color: #8a8a8a;
+  }
+}
+
+.infocontacto p {
+  color: #6b6b6b;
+  text-shadow: #eaeaea 2px 2px;
+  font-weight: bold;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid $secondarycolor;
+
+  &:last-child {
+    border: 0;
+  }
+}

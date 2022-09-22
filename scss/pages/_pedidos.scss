@@ -1,0 +1,70 @@
+.funkomizate {
+  color: $primarycolor;
+  font-weight: bold;
+  font-size: 50px;
+  padding: 2rem 0;
+  margin: 0;
+  text-shadow: $text-shadow;
+  letter-spacing: 2px;
+  animation: bounce-in-bck 1.5s ease-in-out;
+
+  &__text {
+    color: #6b6b6b;
+    font-size: 35px;
+    letter-spacing: 2px;
+    font-weight: bold;
+  }
+
+  &__acordion-color {
+    background-color: $primarycolor !important;
+    color: white !important;
+  }
+}
+
+.accordion-button::after {
+  color: white !important;
+}
+.accordion-button:is(.collapsed)::after {
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
+}
+
+.accordion-button:focus {
+  box-shadow: none !important;
+}
+
+.input-group-text {
+  background-color: $primarycolor !important;
+  color: white !important;
+  border: 1px solid $secondarycolor !important;
+}
+
+.form-control {
+  border: 1px solid $secondarycolor !important;
+
+  &::file-selector-button {
+    background-color: $primarycolor !important;
+    color: white !important;
+  }
+}
+
+.form-check-input:checked {
+  background-color: $primarycolor !important;
+  border-color: $primarycolor !important;
+}
+
+.form-check-input:focus {
+  border-color: $primarycolor !important;
+}
+
+.btn-primary {
+  background-color: $primarycolor !important;
+  border-color: $primarycolor !important;
+
+  &:hover {
+    background-color: #dd5ec1 !important;
+  }
+}

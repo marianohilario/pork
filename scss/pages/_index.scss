@@ -1,0 +1,150 @@
+.home {
+  @include templateGrid(2, 3);
+  grid-template-areas:
+    "logo   Nosotros"
+    "logo   Pedidos"
+    "logo   Contacto";
+
+  * {
+    color: #f6cbec;
+  }
+
+  &__logo {
+    background-color: $primarycolor;
+    border: 1px solid $secondarycolor;
+    grid-area: logo;
+    animation: bounce-in-left 1.5s;
+
+    &__img {
+      width: 75%;
+      filter: drop-shadow(-2px 2px 15px rgba(0, 0, 0, 85%));
+      transition: all 0.5s;
+      animation: bounce-in-left 1.5s;
+
+      &:hover {
+        transform: scale(1.1);
+        z-index: 1;
+      }
+    }
+  }
+}
+
+.home__nosotros {
+  @extend .seccioneshome;
+  grid-area: Nosotros;
+
+  &:hover {
+    @extend .homeseccioneshover;
+  }
+
+  &:hover h4 {
+    @extend .homeseccioneshoverh4;
+  }
+
+  &:hover i {
+    @extend .homeseccioneshoveri;
+  }
+
+  &:hover::before {
+    @extend .seccioneshomehoverbefore;
+  }
+
+  &:hover::after {
+    @extend .seccioneshomehoverafter;
+  }
+
+  i,
+  h4 {
+    transition: all 0.4s;
+  }
+
+  i {
+    font-size: calc(10vh);
+  }
+
+  h4 {
+    opacity: 0;
+    letter-spacing: 1px;
+  }
+}
+
+.home__pedidos {
+  @extend .seccioneshome;
+  background-color: $primarycolor;
+  grid-area: Pedidos;
+  animation: bounce-in-top 2s;
+
+  &:hover {
+    @extend .homeseccioneshover;
+  }
+
+  &:hover h4 {
+    @extend .homeseccioneshoverh4;
+  }
+
+  &:hover i {
+    @extend .homeseccioneshoveri;
+  }
+
+  &:hover::before {
+    @extend .seccioneshomehoverbefore;
+  }
+
+  &:hover::after {
+    @extend .seccioneshomehoverafter;
+  }
+
+  i,
+  h4 {
+    transition: all 0.4s;
+  }
+
+  i {
+    font-size: calc(10vh);
+  }
+
+  h4 {
+    opacity: 0;
+    letter-spacing: 1px;
+  }
+}
+
+.home__contacto {
+  @extend .seccioneshome;
+  grid-area: Contacto;
+  animation: bounce-in-top 1.5s;
+
+  &:hover {
+    @extend .homeseccioneshover;
+  }
+
+  &:hover h4 {
+    @extend .homeseccioneshoverh4;
+  }
+
+  &:hover i {
+    @extend .homeseccioneshoveri;
+  }
+
+  &:hover::before {
+    @extend .seccioneshomehoverbefore;
+  }
+
+  &:hover::after {
+    @extend .seccioneshomehoverafter;
+  }
+
+  i,
+  h4 {
+    transition: all 0.4s;
+  }
+
+  i {
+    font-size: calc(10vh);
+  }
+
+  h4 {
+    opacity: 0;
+    letter-spacing: 1px;
+  }
+}

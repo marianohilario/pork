@@ -2,22 +2,12 @@
   background-color: $primarycolor;
   position: sticky !important;
   top: 0;
-  z-index: 2;
+  z-index: 999;
 
-  &__logo {
-    animation: slide-in-left 2.5s;
-  }
-
-  &__nosotros {
-    animation: slide-in-left 2s;
-  }
-
-  &__pedidos {
-    animation: slide-in-left 1.5s;
-  }
-
-  &__contacto {
-    animation: slide-in-left 1s;
+  @for $item from 1 through 4 {
+    &__item#{$item} {
+      animation: slide-in-left $item * 0.5 + 0.5s;
+    }
   }
 
   &__logo img {

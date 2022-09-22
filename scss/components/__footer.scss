@@ -1,7 +1,7 @@
 .footer {
   background-color: $primarycolor;
-  width: 100vw;
-  padding-block: 1rem;
+  width: 100%;
+  padding: 1rem;
 
   * {
     color: $fontcolor;
@@ -19,4 +19,20 @@
       transform: scale(1.1);
     }
   }
+}
+
+$redes: (
+  instagram: red,
+  whatsapp: green,
+  envelope: blue,
+);
+
+@each $redsocial, $colorred in $redes {
+  .fa-#{$redsocial}:hover {
+    color: $colorred;
+  }
+}
+
+.fa-map-location-dot:hover {
+  color: map-get($map: $redes, $key: instagram);
 }

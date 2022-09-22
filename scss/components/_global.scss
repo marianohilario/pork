@@ -5,3 +5,67 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+
+// Extends
+.seccioneshome {
+  background-color: $secondarycolor;
+  border: 1px solid $secondarycolor;
+  text-shadow: $text-shadow;
+  grid-area: Nosotros;
+  animation: bounce-in-top 2.5s;
+  transition: all 0.4s;
+}
+
+.homeseccioneshover {
+  background-color: #d208a2;
+  box-shadow: rgba(255, 255, 255, 0.4) -6px 6px 6px,
+    rgba(255, 255, 255, 0.4) -6px -6px 6px;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.homeseccioneshoverh4 {
+  font-size: 10vh;
+  color: #f6cbec;
+  opacity: 1;
+  left: 1rem;
+  bottom: 0.6rem;
+}
+
+.homeseccioneshoveri {
+  font-size: 20vw;
+  color: $primarycolor;
+  opacity: 30%;
+  left: -10%;
+  top: 20%;
+}
+
+.seccioneshomehoverbefore {
+  content: "";
+  position: absolute;
+  width: 150px;
+  height: 500%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  background: #f6cbec;
+  -webkit-animation: bordeHome 6s linear infinite;
+  animation: bordeHome 6s linear infinite;
+  z-index: -2;
+}
+
+.seccioneshomehoverafter {
+  content: "";
+  position: absolute;
+  inset: 3px 3px 0 0;
+  background: #d208a2;
+  z-index: -1;
+}
+
+// Mixin
+@mixin templateGrid($columns, $rows) {
+  grid-template-columns: ($columns * 1fr) ($columns - 1 * 1fr);
+  grid-template-rows: repeat($rows, 1fr);
+}

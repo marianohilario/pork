@@ -1,6 +1,10 @@
-@import "../scss/components/global";
-@import "../scss/components/variables";
-@import "../scss/components/keyframes";
-@import "../scss/components/_header.scss";
-@import "../scss/components/_footer";
-@import "../scss/pages/quiensoy";
+@import "./components/variables";
+@import "./components/global";
+@import "./components/keyframes";
+@import "./components/_header.scss";
+@import "./components/_footer";
+@import "./pages/index";
+@import "./pages/quiensoy";
+@import "./pages/pedidos";
+@import "./pages/contacto";
+@import "./components/media";
