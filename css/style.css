@@ -498,7 +498,17 @@
   .main__form__ped {
     padding-bottom: 2 rem; } }
 
+@media (max-width: 460px) {
+  .funkomizate {
+    font-size: 40px; }
+    .funkomizate__text {
+      font-size: 30px; } }
+
 @media (max-width: 375px) {
   .qs__nosotros__imgs {
     justify-content: center;
-    padding: 1rem; } }
+    padding: 1rem; }
+  .funkomizate {
+    font-size: 35px; }
+    .funkomizate__text {
+      font-size: 25px; } }

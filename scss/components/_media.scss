@@ -59,9 +59,27 @@
   }
 }
 
+@media (max-width: 460px) {
+  .funkomizate {
+    font-size: 40px;
+
+    &__text {
+      font-size: 30px;
+    }
+  }
+}
+
 @media (max-width: 375px) {
   .qs__nosotros__imgs {
     justify-content: center;
     padding: 1rem;
+  }
+
+  .funkomizate {
+    font-size: 35px;
+
+    &__text {
+      font-size: 25px;
+    }
   }
 }
