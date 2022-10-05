@@ -11,6 +11,10 @@
     grid-template-areas:
       "logo       Nosotros"
       "Contacto   Pedidos";
+
+    &seccioneshoverh4 {
+      font-size: 8vw;
+    }
   }
 }
 
@@ -29,24 +33,33 @@
       "Nosotros"
       "Pedidos"
       "Contacto";
-  }
-  .home__logo__img {
-    width: 55%;
+
+    &seccioneshoverh4 {
+      font-size: 10vw;
+      bottom: 0.1rem;
+    }
+
+    &__logo__img {
+      width: 55%;
+    }
   }
   .header__logo img {
     padding: 0 1rem;
   }
   .qs__trabajos_text {
     padding: 1rem;
+
+    h2 {
+      font-size: 1.5rem;
+      text-align: center;
+    }
+
+    p {
+      font-size: 0.9rem;
+      padding-bottom: 0;
+    }
   }
-  .qs__trabajos_text h2 {
-    font-size: 1.5rem;
-    text-align: center;
-  }
-  .qs__trabajos_text p {
-    font-size: 0.9rem;
-    padding-bottom: 0;
-  }
+
   .qs__carrusel img {
     margin: 1rem 0;
   }
@@ -67,6 +80,14 @@
       font-size: 30px;
     }
   }
+
+  .footer .fa-map-location-dot {
+    display: none;
+  }
+
+  .footer h6 {
+    font-size: 13px !important;
+  }
 }
 
 @media (max-width: 375px) {
@@ -81,5 +102,15 @@
     &__text {
       font-size: 25px;
     }
+  }
+
+  .instagram-media {
+    width: 20%;
+  }
+}
+
+@media (max-width: 300px) {
+  .d-flex .mobile-300 {
+    display: none;
   }
 }

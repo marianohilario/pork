@@ -5,6 +5,17 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif; }
 
+.fa-brands {
+  cursor: pointer; }
+
+.form-control:focus,
+.form-check-input:focus {
+  box-shadow: #de4ebf66 0 0 0 4px; }
+
+.form-control:not(:disabled):not([readonly])::file-selector-button {
+  background-color: #de4ebf;
+  color: #fff; }
+
 .seccioneshome, .home__nosotros, .home__pedidos, .home__contacto {
   background-color: #e986d4;
   border: 1px solid #e986d4;
@@ -20,7 +31,7 @@
   overflow: hidden; }
 
 .homeseccioneshoverh4, .home__nosotros:hover h4, .home__pedidos:hover h4, .home__contacto:hover h4 {
-  font-size: 10vh;
+  font-size: 5vw;
   color: #f6cbec;
   opacity: 1;
   left: 1rem;
@@ -233,7 +244,7 @@
 
 .header {
   background-color: #de4ebf;
-  position: sticky !important;
+  position: sticky;
   top: 0;
   z-index: 999; }
   .header__item1 {
@@ -253,6 +264,8 @@
   background-color: #de4ebf;
   width: 100%;
   padding: 1rem; }
+  .footer i {
+    transition: color 0.2s, transform 0.4s; }
   .footer * {
     color: #fff;
     text-decoration: none;
@@ -266,13 +279,16 @@
       transform: scale(1.1); }
 
 .fa-instagram:hover {
-  color: red; }
+  color: red;
+  transform: scale(1.2); }
 
 .fa-whatsapp:hover {
-  color: green; }
+  color: green;
+  transform: scale(1.2); }
 
 .fa-envelope:hover {
-  color: blue; }
+  color: blue;
+  transform: scale(1.2); }
 
 .fa-map-location-dot:hover {
   color: red; }
@@ -379,10 +395,12 @@
   .main__qs__carousel {
     background-color: #e986d4; }
     .main__qs__carousel img {
-      box-shadow: 5px 5px 20px 0px rgba(255, 255, 255, 0.8);
-      border: 3px solid #fff; }
+      border: 6px solid #fff; }
     .main__qs__carousel__height__img {
-      height: 40vh; }
+      height: 30vw;
+      max-height: 350px;
+      min-height: 240px;
+      border-radius: 50%; }
 
 .funkomizate {
   color: #de4ebf;
@@ -399,44 +417,68 @@
     letter-spacing: 2px;
     font-weight: bold; }
   .funkomizate__acordion-color {
-    background-color: #de4ebf !important;
-    color: white !important; }
-
-.accordion-button::after {
-  color: white !important; }
+    background-color: #de4ebf;
+    color: white; }
 
 .accordion-button:is(.collapsed)::after {
-  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important; }
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>"); }
 
-.accordion-button:not(.collapsed)::after {
-  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important; }
+.accordion-button:not(.collapsed) {
+  background-color: #de4ebf;
+  color: #fff; }
+  .accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>"); }
 
 .accordion-button:focus {
-  box-shadow: none !important; }
+  box-shadow: none; }
 
-.input-group-text {
-  background-color: #de4ebf !important;
-  color: white !important;
-  border: 1px solid #e986d4 !important; }
+.modal-header {
+  background-color: #de4ebf;
+  color: #fff; }
+
+.btn-close {
+  opacity: 70%;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3e%3c/svg%3e"); }
+  .btn-close:focus {
+    box-shadow: none; }
+
+.modal-body p {
+  font-size: 12px; }
+
+.btn-outline-primary {
+  color: #de4ebf;
+  font-weight: bold;
+  border-color: #de4ebf;
+  border-width: 2px;
+  box-shadow: 2px 2px 3px #de4ebf, 5px 5px 6px #e986d4;
+  letter-spacing: 1px; }
+  .btn-outline-primary:hover {
+    background-color: #de4ebf !important;
+    border-color: #de4ebf !important;
+    color: #fff;
+    box-shadow: 5px 5px 6px #e986d4; }
 
 .form-control {
-  border: 1px solid #e986d4 !important; }
-  .form-control::file-selector-button {
-    background-color: #de4ebf !important;
-    color: white !important; }
+  border: 1px solid #e986d4; }
+  .form-control:focus {
+    border-color: #e986d4; }
 
 .form-check-input:checked {
-  background-color: #de4ebf !important;
-  border-color: #de4ebf !important; }
+  background-color: #de4ebf;
+  border-color: #de4ebf; }
 
 .form-check-input:focus {
-  border-color: #de4ebf !important; }
+  border-color: #de4ebf; }
+
+.form-check-input:indeterminate {
+  background-color: #e986d4; }
 
 .btn-primary {
-  background-color: #de4ebf !important;
-  border-color: #de4ebf !important; }
+  background-color: #de4ebf;
+  border-color: #de4ebf; }
   .btn-primary:hover {
-    background-color: #dd5ec1 !important; }
+    background-color: #dd5ec1 !important;
+    border-color: #de4ebf !important; }
 
 .infocontacto i {
   color: #de4ebf;
@@ -459,6 +501,9 @@
   .infocontacto p:last-child {
     border: 0; }
 
+.instagram-media {
+  min-width: 296px !important; }
+
 @media (max-width: 992px) {
   .enlacesinstagram1 {
     display: none; } }
@@ -467,7 +512,9 @@
   .home {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    grid-template-areas: "logo       Nosotros" "Contacto   Pedidos"; } }
+    grid-template-areas: "logo       Nosotros" "Contacto   Pedidos"; }
+    .homeseccioneshoverh4, .home__nosotros:hover h4, .home__pedidos:hover h4, .home__contacto:hover h4 {
+      font-size: 8vw; } }
 
 @media (max-width: 670px) {
   .enlacesinstagram2 {
@@ -478,18 +525,21 @@
     grid-template-columns: 1fr;
     grid-template-rows: 4fr repeat(3, 1fr);
     grid-template-areas: "logo" "Nosotros" "Pedidos" "Contacto"; }
-  .home__logo__img {
-    width: 55%; }
+    .homeseccioneshoverh4, .home__nosotros:hover h4, .home__pedidos:hover h4, .home__contacto:hover h4 {
+      font-size: 10vw;
+      bottom: 0.1rem; }
+    .home__logo__img {
+      width: 55%; }
   .header__logo img {
     padding: 0 1rem; }
   .qs__trabajos_text {
     padding: 1rem; }
-  .qs__trabajos_text h2 {
-    font-size: 1.5rem;
-    text-align: center; }
-  .qs__trabajos_text p {
-    font-size: 0.9rem;
-    padding-bottom: 0; }
+    .qs__trabajos_text h2 {
+      font-size: 1.5rem;
+      text-align: center; }
+    .qs__trabajos_text p {
+      font-size: 0.9rem;
+      padding-bottom: 0; }
   .qs__carrusel img {
     margin: 1rem 0; }
   .main__funkomizate__title h3 {
@@ -502,7 +552,11 @@
   .funkomizate {
     font-size: 40px; }
     .funkomizate__text {
-      font-size: 30px; } }
+      font-size: 30px; }
+  .footer .fa-map-location-dot {
+    display: none; }
+  .footer h6 {
+    font-size: 13px !important; } }
 
 @media (max-width: 375px) {
   .qs__nosotros__imgs {
@@ -511,4 +565,10 @@
   .funkomizate {
     font-size: 35px; }
     .funkomizate__text {
-      font-size: 25px; } }
+      font-size: 25px; }
+  .instagram-media {
+    width: 20%; } }
+
+@media (max-width: 300px) {
+  .d-flex .mobile-300 {
+    display: none; } }

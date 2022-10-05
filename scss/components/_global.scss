@@ -6,6 +6,20 @@
   font-family: "Poppins", sans-serif;
 }
 
+.fa-brands {
+  cursor: pointer;
+}
+
+.form-control:focus,
+.form-check-input:focus {
+  box-shadow: $form-box-shadow;
+}
+
+.form-control:not(:disabled):not([readonly])::file-selector-button {
+  background-color: $primarycolor;
+  color: #fff;
+}
+
 // Extends
 .seccioneshome {
   background-color: $secondarycolor;
@@ -25,7 +39,7 @@
 }
 
 .homeseccioneshoverh4 {
-  font-size: 10vh;
+  font-size: 5vw;
   color: #f6cbec;
   opacity: 1;
   left: 1rem;

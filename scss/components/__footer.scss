@@ -3,6 +3,10 @@
   width: 100%;
   padding: 1rem;
 
+  i {
+    transition: color 0.2s, transform 0.4s;
+  }
+
   * {
     color: $fontcolor;
     text-decoration: none;
@@ -30,6 +34,7 @@ $redes: (
 @each $redsocial, $colorred in $redes {
   .fa-#{$redsocial}:hover {
     color: $colorred;
+    transform: scale(1.2);
   }
 }
 

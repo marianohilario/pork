@@ -66,12 +66,14 @@
     background-color: $secondarycolor;
 
     img {
-      box-shadow: 5px 5px 20px 0px rgba(255, 255, 255, 0.8);
-      border: 3px solid #fff;
+      border: 6px solid #fff;
     }
 
     &__height__img {
-      height: 40vh;
+      height: 30vw;
+      max-height: 350px;
+      min-height: 240px;
+      border-radius: 50%;
     }
   }
 }
