@@ -5,8 +5,14 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif; }
 
-.fa-brands {
-  cursor: pointer; }
+.form-control {
+  border: 1px solid #e986d4; }
+  .form-control:focus {
+    border-color: #e986d4;
+    box-shadow: #de4ebf66 0 0 0 4px; }
+
+.form-check-input:focus {
+  border-color: #e986d4; }
 
 .form-control:focus,
 .form-check-input:focus {
@@ -15,6 +21,9 @@
 .form-control:not(:disabled):not([readonly])::file-selector-button {
   background-color: #de4ebf;
   color: #fff; }
+
+.form-control:hover:not(:disabled):not([readonly])::file-selector-button {
+  background-color: #dd5ec1 !important; }
 
 .seccioneshome, .home__nosotros, .home__pedidos, .home__contacto {
   background-color: #e986d4;
@@ -457,11 +466,6 @@
     border-color: #de4ebf !important;
     color: #fff;
     box-shadow: 5px 5px 6px #e986d4; }
-
-.form-control {
-  border: 1px solid #e986d4; }
-  .form-control:focus {
-    border-color: #e986d4; }
 
 .form-check-input:checked {
   background-color: #de4ebf;

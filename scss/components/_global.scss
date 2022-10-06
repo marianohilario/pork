@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;800&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -6,8 +7,17 @@
   font-family: "Poppins", sans-serif;
 }
 
-.fa-brands {
-  cursor: pointer;
+.form-control {
+  border: 1px solid $secondarycolor;
+
+  &:focus {
+    border-color: $secondarycolor;
+    box-shadow: $form-box-shadow;
+  }
+}
+
+.form-check-input:focus {
+  border-color: $secondarycolor;
 }
 
 .form-control:focus,
@@ -18,6 +28,11 @@
 .form-control:not(:disabled):not([readonly])::file-selector-button {
   background-color: $primarycolor;
   color: #fff;
+
+}
+
+.form-control:hover:not(:disabled):not([readonly])::file-selector-button {
+  background-color: #dd5ec1 !important;
 }
 
 // Extends

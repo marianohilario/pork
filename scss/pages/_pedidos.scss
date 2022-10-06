@@ -65,18 +65,10 @@
   letter-spacing: 1px;
 
   &:hover {
-    background-color: $primarycolor !important;
-    border-color: $primarycolor !important;
+    background-color: $primarycolor  !important;
+    border-color: $primarycolor  !important;
     color: $fontcolor;
     box-shadow: 5px 5px 6px $secondarycolor;
-  }
-}
-
-.form-control {
-  border: 1px solid $secondarycolor;
-
-  &:focus {
-    border-color: $secondarycolor;
   }
 }
 
@@ -101,6 +93,6 @@
 
   &:hover {
     background-color: #dd5ec1 !important;
-    border-color: $primarycolor !important;
+    border-color: $primarycolor  !important;
   }
 }
