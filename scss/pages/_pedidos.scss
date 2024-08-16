@@ -1,98 +1,104 @@
+.pedidosBody {
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
 .funkomizate {
-  color: $primarycolor;
-  font-weight: bold;
-  font-size: 50px;
-  padding: 2rem 0;
-  margin: 0;
-  text-shadow: $text-shadow;
-  letter-spacing: 2px;
-  animation: bounce-in-bck 1.5s ease-in-out;
-
-  &__text {
-    color: #6b6b6b;
-    font-size: 35px;
-    letter-spacing: 2px;
+    color: $primarycolor;
     font-weight: bold;
-  }
+    font-size: 50px;
+    padding: 2rem 0;
+    margin: 0;
+    text-shadow: $text-shadow;
+    letter-spacing: 2px;
+    animation: bounce-in-bck 1.5s ease-in-out;
 
-  &__acordion-color {
-    background-color: $primarycolor;
-    color: white;
-  }
+    &__text {
+        color: #6b6b6b;
+        font-size: 35px;
+        letter-spacing: 2px;
+        font-weight: bold;
+    }
+
+    &__acordion-color {
+        background-color: $primarycolor;
+        color: white;
+    }
 }
 
 .accordion-button:is(.collapsed)::after {
-  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>");
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>");
 }
 
 .accordion-button:not(.collapsed) {
-  background-color: $primarycolor;
-  color: $fontcolor;
+    background-color: $primarycolor;
+    color: $fontcolor;
 
-  &::after {
-    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>");
-  }
+    &::after {
+        background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>");
+    }
 }
 
 .accordion-button:focus {
-  box-shadow: none;
+    box-shadow: none;
 }
 
 .modal-header {
-  background-color: $primarycolor;
-  color: $fontcolor;
+    background-color: $primarycolor;
+    color: $fontcolor;
 }
 
 .btn-close {
-  opacity: 70%;
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3e%3c/svg%3e");
+    opacity: 70%;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3e%3c/svg%3e");
 
-  &:focus {
-    box-shadow: none;
-  }
+    &:focus {
+        box-shadow: none;
+    }
 }
 
 .modal-body p {
-  font-size: 12px;
+    font-size: 12px;
 }
 
 .btn-outline-primary {
-  color: $primarycolor;
-  font-weight: bold;
-  border-color: $primarycolor;
-  border-width: 2px;
-  box-shadow: 2px 2px 3px $primarycolor, 5px 5px 6px $secondarycolor;
-  letter-spacing: 1px;
+    color: $primarycolor;
+    font-weight: bold;
+    border-color: $primarycolor;
+    border-width: 2px;
+    box-shadow: 2px 2px 3px $primarycolor, 5px 5px 6px $secondarycolor;
+    letter-spacing: 1px;
 
-  &:hover {
-    background-color: $primarycolor  !important;
-    border-color: $primarycolor  !important;
-    color: $fontcolor;
-    box-shadow: 5px 5px 6px $secondarycolor;
-  }
+    &:hover {
+        background-color: $primarycolor !important;
+        border-color: $primarycolor !important;
+        color: $fontcolor;
+        box-shadow: 5px 5px 6px $secondarycolor;
+    }
 }
 
 .form-check-input {
-  &:checked {
-    background-color: $primarycolor;
-    border-color: $primarycolor;
-  }
+    &:checked {
+        background-color: $primarycolor;
+        border-color: $primarycolor;
+    }
 
-  &:focus {
-    border-color: $primarycolor;
-  }
+    &:focus {
+        border-color: $primarycolor;
+    }
 
-  &:indeterminate {
-    background-color: $secondarycolor;
-  }
+    &:indeterminate {
+        background-color: $secondarycolor;
+    }
 }
 
 .btn-primary {
-  background-color: $primarycolor;
-  border-color: $primarycolor;
+    background-color: $primarycolor;
+    border-color: $primarycolor;
 
-  &:hover {
-    background-color: #dd5ec1 !important;
-    border-color: $primarycolor  !important;
-  }
+    &:hover {
+        background-color: #dd5ec1 !important;
+        border-color: $primarycolor !important;
+    }
 }

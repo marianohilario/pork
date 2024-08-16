@@ -4,7 +4,7 @@
   "description": "Proyecto para CoderHouse",
   "main": "index.js",
   "scripts": {
-    "build-sass": "node-sass --include-path scss ./scss/style.scss ./css/style.css -w"
+    "build-sass": "sass ./scss/style.scss ./css/style.css -w"
   },
   "repository": {
     "type": "git",
@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/marianohilario/pork#readme",
   "devDependencies": {
-    "node-sass": "^7.0.3"
+    "sass": "^1.77.8"
   }
 }
